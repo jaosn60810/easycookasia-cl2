@@ -14,7 +14,7 @@ const searchClient = algoliasearch(
 
 function Hit({ hit }) {
   return (
-    <div className="flex items-center mb-5">
+    <a href="#" className="flex items-center mb-5">
       <img
         src="https://cdn.sanity.io/images/jdiyrv6o/production/b6a697c29f0cc0aaacd9776b20b553baaf24063d-1000x1000.jpg"
         alt=""
@@ -30,11 +30,11 @@ function Hit({ hit }) {
         />
       </p>
       <p className="mr-5 text-3">€ {hit.node.price / 100}</p>
-      <a
+      <i
         href="#"
         className="i-material-symbols:keyboard-arrow-right c-dark1 opacity-50 text-3"
-      ></a>
-    </div>
+      ></i>
+    </a>
   );
 }
 
